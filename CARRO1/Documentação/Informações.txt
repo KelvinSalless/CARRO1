@@ -1,0 +1,1 @@
+Caso a garagem tenha mais que dois contatos, tenha bastante vendedores, é só criar uma página que contenha o telefone, nome, cidade de cada vendedor

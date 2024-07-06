@@ -1,0 +1,6 @@
+Dimensões:
+
+1920x1280
+1280x854
+656x423 -> Fica um pouco embaçado
+1600x1068 -> ótima qualidade

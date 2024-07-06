@@ -1,0 +1,417 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+
+.css.navbargeral {
+  position: fixed;
+  width: 100%;
+}
+
+.navbar {
+  background-color: #000000;
+  color: #0CC0DF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 50px;
+}
+
+.logo {
+  font-size: 24px;
+
+}
+
+.nav-links-desktop {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links-desktop li {
+  padding: 0 15px;
+}
+
+.nav-links-desktop a,
+.nav-links-mobile a {
+  color: #0CC0DF;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links-desktop a:hover {
+  color: #fff;
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.8rem;
+  z-index: 5;
+}
+
+.nav-links-mobile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.2rem;
+  width: 80%;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links-mobile li {
+  border-bottom: 1px solid #787272;
+  padding-bottom: 1.2rem;
+}
+
+.hamburger,
+.close {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.close {
+  margin-top: 20px;
+  margin-right: 20px;
+  display: block;
+  align-self: end;
+}
+
+.flex {
+  display: flex;
+}
+
+
+.mySlides {
+  display: none;
+  margin: auto;
+  height: auto;
+  width: 100%;
+  background-size: cover;
+}
+
+.display-container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.display-container img {
+  background-size: cover;
+  height: 600px;
+  width: auto;
+}
+
+.display-container .buttonleft {
+  background: #000000;
+  color: #0CC0DF;
+  margin-top: 10px;
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  margin-right: 50px;
+}
+
+.display-container .buttonright {
+  background: #000000;
+  color: #0CC0DF;
+  margin-top: 10px;
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+}
+
+main {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.voltar {
+  margin-top: 20px;
+}
+
+.voltar a {
+  text-decoration: none;
+  margin-left: 60px;
+  color: #0CC0DF;
+  transition: 0.5s;
+}
+
+.voltar a:hover {
+  color: #0e7486;
+}
+
+/*---------------------------------Detalhamento do veiculo------------------------------------*/
+
+.conteudo {
+  display: block;
+  margin: -40px 5px 0px 5px;
+}
+
+.titulo {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  color: #0CC0DF;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+  border-bottom: 1px solid #787272;
+}
+
+.titulo h2 {
+  font-size: 3rem;
+}
+
+.titulo h3 {
+  font-size: 2rem;
+}
+
+.descricao {
+  display: flex;
+}
+
+.descricao i {
+  color: #0CC0DF;
+  margin-left: 20px;
+}
+
+.descricao-esquerda {
+  width: 300px;
+  margin-left: 20px;
+}
+
+.descricao-direita {
+  border: 1px solid #dadada;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 20px;
+  width: 80%;
+  height: auto;
+}
+
+.descricao-direita p {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.descricao .whats {
+  background: #0CC0DF;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 25%;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.descricao .whats a {
+  text-decoration: none;
+  color: white;
+
+}
+
+/*------------------------------------footer---------------------------------*/
+
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 50px 0;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-content .logomarca {
+  margin-left: -90px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  display: grid;
+}
+
+
+.footer-section h3 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 0.9em;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: white;
+}
+
+.horarios {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.horarios span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Estilos para o rodapé inferior */
+.footer-inferior {
+  text-align: center;
+  padding-top: 10px;
+  color: #ccc;
+  font-size: 0.8em;
+  margin: 10px;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 10%;
+  position: relative;
+  height: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/*--------------------------------------CELULAR----------------------------------------*/
+
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+
+  .nav-links-desktop {
+    display: none;
+  }
+
+  .nav-links-mo {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .footer-content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-content .logomarca {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 15px;
+    margin-bottom: 20px;
+  }
+
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+
+  .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .display-container img {
+    height: 290px;
+    width: 100%
+  }
+
+  .display-container {
+    width: 100%px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .display-container .buttonleft {
+    margin-left: 15px;
+  }
+
+  .voltar {
+    margin-top: 20px;
+    margin-left: -50px;
+    margin-bottom: 20px;
+  }
+
+  .titulo {
+    margin-left: 0px;
+    margin-right: 0px;
+    gap: 0px;
+  }
+
+  .descricao {
+    display: block;
+    margin-right: 20px;
+  }
+
+  .descricao-direita {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+}

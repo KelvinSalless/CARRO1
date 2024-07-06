@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mt5</title>
+  <link rel="stylesheet" href="/motos/mt5.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="/motos/mt5.js" defer></script>
+</head>
+
+<body>
+
+  <!-----------------------------------------------BARRA DE NAVEGAÇÃO-------------------------------->
+  <div class="navbargeral">
+    <nav class="navbar">
+      <div class="logo">LOGO</div>
+      <ul class="nav-links-desktop">
+        <li><a href="/index.html">HOME</a></li>
+        <li><a href="/carros.html">CARROS</a></li>
+        <li><a href="/motos.html">MOTOS</a></li>
+        <li><a href="/sobre.html">SOBRE</a></li>
+      </ul>
+      <div class="mobile-menu" id="mobileMenu">
+        <button class="close" id="closeButton">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="nav-links-mobile">
+          <li><a href="/index.html">HOME</a></li>
+          <li><a href="/carros.html">CARROS</a></li>
+          <li><a href="/motos.html">MOTOS</a></li>
+          <li><a href="/sobre.html">SOBRE</a></li>
+        </ul>
+      </div>
+      <button class="hamburger" id="hamburgerButton">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </div>
+  <!-----------------------------------------------CONTEUDO-------------------------------------------->
+
+  <div class="voltar">
+    <a href="/index.html"><i class="fa-solid fa-arrow-left"></i> VOLTAR</a>
+  </div>
+
+
+
+  <main>
+    <div class="display-container">
+      <img class="mySlides" src="/img/mt5.jpg">
+      <img class="mySlides" src="/img/mt5.1.jpg">
+      <img class="mySlides" src="/img/mt5.2.jpg">
+      <img class="mySlides" src="/img/mt5.3.jpg">
+      <div class="botao">
+        <button class="buttonleft" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="buttonright" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+    </div>
+  </main>
+
+  <div class="conteudo">
+    <div class="titulo">
+      <h2>CB 300r</h2>
+      <h3>R$ 60.000,00</h3>
+    </div>
+
+    <div class="descricao">
+      <div class="descricao-esquerda">
+        <p><i class="fa-regular fa-calendar-days"></i> Ano: 2024</p>
+        <p><i class="fa-solid fa-gas-pump"></i> Combustível: Flex</p>
+        <p><i class="fa-solid fa-gauge-high"></i> KM: 150.000</p>
+        <p><i class="fa-solid fa-location-dot"></i> Cidade: São Joaquim da Barra-SP</p>
+        <button class="whats"><a href="https://wa.me/5516995482315">Enviar mensagem</a></button>
+      </div>
+      <div class="descricao-direita">
+        <p>Descrição:</p>
+        <p>Procura novas sensações? Inclua uma vantagem adicional extremamente agradável à condução com um formato leve
+          impulsionado por potência altamente reativa. Qualquer que seja o ponto de vista (como um degrau acima em
+          termos de potência ou como diversão numa moto de maior dimensão), a CB300R conta com um animado motor
+          monocilíndrico e um chassis de alta qualidade, incluindo forquilhas Showa SFF-BP USD, no estilo Neo Sports
+          Café distinto. Desfrute do puro prazer de motociclismo na sua origem.</p>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+<footer>
+  <div class="footer-content">
+    <div class="logomarca">
+      <img src="/Logo marca/logo marca.png" alt="Logo Marca" style="width: 100px;">
+    </div>
+    <div class="footer-section about">
+      <h3><strong>HORARIO DE FUNCIONAMENTO</strong></h3>
+      <div class="horarios">
+        <span>Segunda - Sexta: 08:00h às 18:00h</span>
+        <span><a>Sábado: 08:00h às 14:00h</a> </span>
+        <span><a>Domingos: fechado</a> </span>
+      </div>
+    </div>
+    <div class="footer-section links">
+      <h3>REDES SOCIAIS</h3>
+      <a href="#"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+      <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+    </div>
+  </div>
+  <div class="map-responsive">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d755.2689920189326!2d-73.965754!3d40.782344!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2589a018531e3%3A0xb9df1f7387a94119!2sCentral%20Park!5e0!3m2!1spt-BR!2sbr!4v1719949650735!5m2!1spt-BR!2sbr"
+      width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="footer-inferior">
+    &copy; MeuSite.com | Desenvolvido por Kelvin Sales<br>
+    KAVAK TECNOLOGIA E COMERCIO DE VEICULOS LTDA., inscrita no CNPJ sob o nº 36.740.390/0001-83, com sede na Estrada dos
+    Alpes, nº 855, Galpão A, Módulo 1, Jardim Belval, Barueri/SP, CEP 06.423-080
+  </div>
+</footer>
+
+</html>

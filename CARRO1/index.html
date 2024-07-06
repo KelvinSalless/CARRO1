@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carros 01</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+
+  <!-----------------------------------------------BARRA DE NAVEGAÇÃO-------------------------------->
+  <div class="navbargeral">
+    <nav class="navbar">
+      <div class="logo">LOGO</div>
+      <ul class="nav-links-desktop">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="carros.html">CARROS</a></li>
+        <li><a href="motos.html">MOTOS</a></li>
+        <li><a href="sobre.html">SOBRE</a></li>
+      </ul>
+      <div class="mobile-menu" id="mobileMenu">
+        <button class="close" id="closeButton">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="nav-links-mobile">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="carros.html">CARROS</a></li>
+          <li><a href="motos.html">MOTOS</a></li>
+          <li><a href="sobre.html">SOBRE</a></li>
+        </ul>
+      </div>
+      <button class="hamburger" id="hamburgerButton">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </div>
+  <!-------------------------------------------------------------------------------------------------->
+
+  <!-----------------------------------------------CONTEUDO-------------------------------------------->
+  <div class="img-capa"></div>
+
+  <div class="header">
+    <div class="dropdown" data-dropdown>
+      <button class="link" data-dropdown-button>Preços <i class="fa-solid fa-arrow-down"></i></button>
+      <div class="dropdown-menu information-grid">
+        <div>
+          <div class="dropdown-heading">Preços dos carros</div>
+          <div class="dropdown-links">
+            <a href="/carros-precos/c30000.html" class="link">Até R$ 30.000,00</a>
+            <a href="/carros-precos/c50000.html" class="link">Até R$ 50.000,00</a>
+            <a href="/carros-precos/c70000.html" class="link">Até R$ 70.000,00</a>
+            <a href="/carros-precos/c90000.html" class="link">Até R$ 90.000,00</a>
+            <a href="/carros.html" class="link">TODOS</a>
+          </div>
+        </div>
+        <div>
+          <div class="dropdown-heading">Preços das motos</div>
+          <div class="dropdown-links">
+            <a href="/motos-precos/m10000.html" class="link">Até R$ 10.000,00</a>
+            <a href="/motos-precos/m15000.html" class="link">Até R$ 15.000,00</a>
+            <a href="/motos-precos/m25000.html" class="link">Até R$ 25.000,00</a>
+            <a href="/motos-precos/m30000.html" class="link">Até R$ 30.000,00</a>
+            <a href="/motos.html" class="link">TODOS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <input type="text" id="searchInput" placeholder="Pesquisar carros e motos...">
+  </div>
+
+  <main id="carList">
+    <div id="card">
+      <img src="${carro.imagem}" alt="${carro.marca} ${carro.modelo}">
+      <h2>${carro.modelo}</h2>
+      <h4> ${carro.marca} </h4>
+      <p><i class="fa-regular fa-calendar-days"></i> Ano: ${carro.ano}</p>
+      <p><i class="fa-solid fa-gas-pump"></i> Combustível: ${carro.comb}</p>
+      <p><i class="fa-solid fa-gauge-high"></i> KM: ${carro.KM}</p>
+      <p class="preco">R$ ${carro.preco.toLocaleString('pt-BR')}</p>
+      <button class="vermais"><a href="${carro.vermais}">Ver mais...</a></button>
+      <button class="whats"><a href="#">Enviar mensagem</a></button>
+    </div>
+  </main>
+  </main>
+</body>
+
+<footer>
+  <div class="footer-content">
+    <div class="logomarca">
+      <img src="Logo marca/logo marca.png" alt="Logo Marca" style="width: 100px;">
+    </div>
+    <div class="footer-section about">
+      <h3><strong>HORARIO DE FUNCIONAMENTO</strong></h3>
+      <div class="horarios">
+        <span>Segunda - Sexta: 08:00h às 18:00h</span>
+        <span><a>Sábado: 08:00h às 14:00h</a> </span>
+        <span><a>Domingos: fechado</a> </span>
+      </div>
+    </div>
+    <div class="footer-section links">
+      <h3>REDES SOCIAIS</h3>
+      <a href="#"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+      <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+    </div>
+  </div>
+  <div class="map-responsive">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d755.2689920189326!2d-73.965754!3d40.782344!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2589a018531e3%3A0xb9df1f7387a94119!2sCentral%20Park!5e0!3m2!1spt-BR!2sbr!4v1719949650735!5m2!1spt-BR!2sbr"
+      width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="footer-inferior">
+    &copy; MeuSite.com | Desenvolvido por Kelvin Sales<br>
+    KAVAK TECNOLOGIA E COMERCIO DE VEICULOS LTDA., inscrita no CNPJ sob o nº 36.740.390/0001-83, com sede na Estrada dos
+    Alpes, nº 855, Galpão A, Módulo 1, Jardim Belval, Barueri/SP, CEP 06.423-080
+  </div>
+</footer>
+
+
+
+
+</html>
